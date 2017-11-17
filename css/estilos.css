@@ -1,0 +1,234 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	margin: 0;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,e5e5e5+100;White+3D */
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+}
+.titulo {
+	font-size: 76px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	margin-bottom: 15px;
+	line-height: 70px;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.resumen {
+	font-size: 18px;
+	}
+
+h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 50px;
+}
+
+input, textarea {
+	outline: 0;	
+}
+
+input:focus, textarea:focus {
+background:lightgray;
+}
+
+.lugar {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 24px;
+	text-align: center;
+}
+
+.portada {
+	
+	background-image: url("https://prodstoragemedia.blob.core.windows.net/lugares/imagenes/lg-f60afa6a-d43c-458d-836b-75549feccfe8.jpeg");
+	background-size: cover;
+	color:white;
+	height: 950px;
+}
+
+
+
+.destinos {
+	font-family: 'Montserrat', sans-serif;
+	color: #003049;
+	
+	}
+
+.menu {
+	font-size: 16px;
+	display: inline-block;
+}
+
+.menu li {
+	display: inline-block;
+	margin-left: 15px;
+	
+}
+
+
+
+
+.menu a {
+	color:white;
+	text-decoration: none;
+	transition: 0.3s;
+	border-bottom: none;
+
+}
+
+.menu a:hover {
+	color:#d62828;	
+	border-bottom: 1px solid #d62828;
+}
+
+.logotipo {
+	display: inline-block;
+}
+
+.izq {
+
+	display: inline-block;
+	width: 40%;
+	box-sizing: border-box;
+
+}
+
+
+.contenedor {
+	width: 1000px;
+	margin: 0 auto;
+	
+}
+
+.destinosNacionalContenedor { 
+	display: flex;
+	max-width: 1000px;
+	overflow: hidden;
+	justify-content: space-between;
+	
+
+}
+
+.nacionalItem {
+	max-width: 300px;
+	margin-bottom: 60px;
+}
+
+.nacional {
+	text-align: center;
+	background-image: url("https://prodstoragemedia.blob.core.windows.net/home/imagenes/755de6f9-7821-40bc-87e6-ab14e58d8498.jpeg");
+	height: 230px;
+	margin-bottom: 50px;
+	color: white;
+	text-shadow: 2px 2px 1px #000;
+}
+
+.nacional h2 {
+	position: relative;
+	top:140px;
+}
+
+.espaciador {
+
+	display: inline-block;
+	width: 200px;
+	height: 333px;
+	align-items: center;
+}
+
+.textosTitulo {
+	display: inline-block;
+	position: relative;
+    top: 140px;
+    left: 52px;
+}
+
+.items {
+	padding-left: 17px;
+}
+
+.footer {
+	background: #003049;
+	padding: 50px 10px;
+}
+
+.contacto {
+	display: flex;
+	width: 300px;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.contacto img {
+	display: block;
+}
+
+.contacto strong {
+	display: block;
+}
+
+.contacto a {
+	color: white;
+	text-decoration: none;	
+	margin: 10px 10px 10px 0;
+}
+
+.footer .contenedor {
+	display:flex;
+	justify-content: space-between;
+}
+
+.formulario {
+	display: flex;	
+	width: 400px;
+	color:white;	
+}
+
+.col1, .col2 {
+	display: flex;
+	flex-direction: column;
+}
+
+.col1 {
+	margin-right: 15px;
+}
+
+.col2 {
+	align-items: flex-start;
+}
+
+.col2 .button {
+	margin-top: 15px;
+}
+
+.intereses label {
+	font-size: 12px;
+}
+
+.formulario label, .intereses {
+	margin-top: 10px;
+}
+
+.button {
+	border-radius: 8px;
+	border:none;
+	background: #f77f00;
+	color: white;
+	padding: 7px 18px;
+	font-size: 15px;
+	cursor:pointer;
+	text-decoration: none;
+}
+
+
+
+
+
