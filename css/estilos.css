@@ -79,14 +79,14 @@ background:lightgray;
 .menu a {
 	color:white;
 	text-decoration: none;
-	transition: 0.3s;
-	border-bottom: none;
+	transition: 1s;
+	border-bottom: 1px solid rgba(214, 40, 40, 0);
 
 }
 
 .menu a:hover {
 	color:#d62828;	
-	border-bottom: 1px solid #d62828;
+	border-bottom: 1px solid rgba(214, 40, 40, 1);
 }
 
 .logotipo {
@@ -129,6 +129,8 @@ background:lightgray;
 	margin-bottom: 50px;
 	color: white;
 	text-shadow: 2px 2px 1px #000;
+	background-size: 150%;
+	/*transition: .2s;*/
 }
 
 .nacional h2 {

@@ -211,6 +211,13 @@
 
     
   </footer> 
+  <script>
+    const $fondo = document.getElementById("nacional");
+    window.addEventListener("scroll", function(e){
+      console.log(window.scrollY);
+      $fondo.style.backgroundPositionY = (window.scrollY + 100) * .5 + "px";
+    })
+  </script>
 
 </body>
 </html>
