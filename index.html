@@ -139,12 +139,158 @@
         </article>
       </div>
       
-    </div> 
+    </div>
+
+        <div id="internacional" class="nacional">      
+
+      <h2>Destinos Internacionales</h2>
+
+    </div>
     
-    Destinos internacionales
-    Descanso cerca a Bogotá
+
+    <div class="contenedor">
+      
+
+      <div class="destinosNacionalContenedor">
+
+        <div class="colizquierda">
+          
+          <article class="nacionalItem"> <!-- San Andres -->
+            <img src="img/sanAndres.jpg" width="300px" alt="San Andrés">
+
+            <h3 class="lugar">Panamá</h3> 
+            <ul class="items">
+              <li>Hoteles espectaculares</li>
+              <li>Canal de Panamá, atractivo unico en el mundo</li>
+              <li>Hoteles de playa y ciudad, para todos los gustos</li>
+            </ul>
+
+            <button class="button">
+              Ver mas
+            </button>
+
+
+          </article>
+
+           <article class="nacionalItem"> <!-- Amazonas -->
+            <img src="img/amazonas.jpg" width="300px" alt="Amazonas">
+            <h3 class="lugar">Cancún</h3>
+            <ul class="items">
+              <li>Riviera Maya</li>
+              <li>Ruinas mayas</li>
+              <li>Un lugar con muchisima diversión</li>
+            </ul>
+
+             <button class="button">
+              Ver mas
+            </button>
+          </article>
+          
+        </div>
+
+        <div class="colderecha">
+          
+          <article class="nacionalItem"> <!-- Guajira -->
+            <img src="img/guajira.jpg" width="300px" alt="Guajira">
+            <h3 class="lugar">Curazao</h3>
+            <ul class="items">
+              <li>Patrimonio cultural de la Unesco</li>
+              <li>Cultura europea</li>
+              <li>Variedad cultural</li>
+            </ul>
+
+             <button class="button">
+              Ver mas
+            </button>
+          </article>
+
+          <article class="nacionalItem"> <!-- Guajira -->
+              <img src="img/guajira.jpg" width="300px" alt="Guajira">
+              <h3 class="lugar">Isla Margarita</h3>
+              <ul class="items">
+                <li>Extremadamente económico</li>
+                <li>Disfrute como millonario</li>
+                <li>Playas hermosas</li>
+              </ul>
+
+               <button class="button">
+                Ver mas
+              </button>
+
+
+          </article>
+          
+        </div>
+        
+
+      </div>
+      
+    </div>
+
+        <div id="cercaBogota" class="nacional">      
+
+      <h2>Descanso cerca a Bogotá</h2>
+
+    </div>
+    
+
+    <div class="contenedor">
+      
+
+      <div class="destinosNacionalContenedor">
+        
+        <article class="nacionalItem"> <!-- San Andres -->
+          <img src="img/sanAndres.jpg" width="300px" alt="San Andrés">
+
+          <h3 class="lugar">Girardot</h3> 
+          <ul class="items">
+            <li>Lugar de descanso para toda la familia</li>
+            <li>Amplias zonas verdes y de juegos</li>
+            <li>A dos horas y media de Bogotá por una excelente carretera</li>
+          </ul>
+
+          <button class="button">
+            Ver mas
+          </button>
+
+
+        </article>
+
+         <article class="nacionalItem"> <!-- Amazonas -->
+          <img src="img/amazonas.jpg" width="300px" alt="Amazonas">
+          <h3 class="lugar">Villavicencio</h3>
+          <ul class="items">
+            <li>Variedad de parques ecológicos</li>
+            <li>Espectaculares paisajes</li>
+            <li>Disfrute de deportes extremos</li>
+          </ul>
+
+           <button class="button">
+            Ver mas
+          </button>
+        </article>
+
+         <article class="nacionalItem"> <!-- Guajira -->
+          <img src="img/guajira.jpg" width="300px" alt="Guajira">
+          <h3 class="lugar">Eje Cafetero</h3>
+          <ul class="items">
+            <li>En pleno corazón de toda la cultura cafetera</li>
+            <li>Variedad de parques temáticos</li>
+            <li>Cerca al parque Los Nevados</li>
+          </ul>
+
+           <button class="button">
+            Ver mas
+          </button>
+        </article>
+      </div>
+      
+    </div>   
+    
    
   </section>
+
+
 
   <footer id="contacto" class="footer">
 
@@ -213,9 +359,23 @@
   </footer> 
   <script>
     const $fondo = document.getElementById("nacional");
+
+     
     window.addEventListener("scroll", function(e){
-      console.log(window.scrollY);
+      // console.log(window.scrollY);
       $fondo.style.backgroundPositionY = (window.scrollY + 100) * .5 + "px";
+    })
+
+     const $fondo1 = document.getElementById("internacional");
+    window.addEventListener("scroll", function(e){
+      // console.log(window.scrollY);
+      $fondo1.style.backgroundPositionY = (window.scrollY + 100) * .5 + "px";
+    })
+
+     const $fondo2 = document.getElementById("cercaBogota");
+    window.addEventListener("scroll", function(e){
+      // console.log(window.scrollY);
+      $fondo2.style.backgroundPositionY = (window.scrollY + 100) * .5 + "px";
     })
   </script>
 
