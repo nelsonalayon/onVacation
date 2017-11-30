@@ -521,7 +521,7 @@ p, .equipo {
 		flex:1;
 	}
 
-	.menu, .menu li {
+	.menu li {
 		display: block;
 	}
 

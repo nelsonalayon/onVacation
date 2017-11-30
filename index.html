@@ -5,7 +5,7 @@
   <title>Asesoria Viajes todo incluido On Vacation</title>
   <link rel="stylesheet" href="css/estilos.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:300,400,700" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <!-- <link rel="stylesheet" media="(max-width: 1000px)" href="css/media-query.css"> -->
 </head>
 
@@ -420,6 +420,8 @@
     
   </footer> 
   <script>
+
+    // las imagenes parallax
     const $fondo = document.getElementById("nacional");
 
      
@@ -440,14 +442,47 @@
       $fondo2.style.backgroundPositionY = (window.scrollY + 100) * .5 + "px";
     })
 
-    // menu burguer
+    // las imagenes parallax
 
+  
+
+    // media-query javasctipt
+
+    var consulta = window.matchMedia("(max-width: 590px)");
     var $burguerButton = document.getElementById("burguer-button"); 
     var $menu = document.getElementById("menu");
+    consulta.addListener(mediaQuery);
 
-    $burguerButton.addEventListener ("touchstart", function() {
-      $menu.classList.toggle("active")
-    });
+    function toggleMenu() {
+            $menu.classList.toggle("active")
+          }
+
+    function mediaQuery() {
+      if (consulta.matches) {
+      // menu burguer
+
+          
+          $burguerButton.addEventListener ("touchstart", toggleMenu) 
+            
+            
+          }
+
+          // menu burguer
+          
+
+          else {
+            $burguerButton.removeEventListener ("touchstart", toggleMenu) 
+
+          }
+    }
+
+    mediaQuery();
+ 
+    
+
+    
+
+    // media-query javasctipt
 
 
 
