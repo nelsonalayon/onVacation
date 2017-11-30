@@ -5,6 +5,7 @@
   <title>Asesoria Viajes todo incluido On Vacation</title>
   <link rel="stylesheet" href="css/estilos.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:300,400,700" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- <link rel="stylesheet" media="(max-width: 1000px)" href="css/media-query.css"> -->
 </head>
 
@@ -22,8 +23,9 @@
         <img src="img/onvacation.png" width="186">
       </a>
     </figure>
+    <span class="burguer-button icon-menu" id="burguer-button"></span>
 
-    <nav class="menu">  <!-- menu -->
+    <nav class="menu" id="menu">  <!-- menu -->
       <ul>
         <li>
           <a href="#internacional">Destinos <br> internacionales</a>
@@ -437,6 +439,18 @@
       // console.log(window.scrollY);
       $fondo2.style.backgroundPositionY = (window.scrollY + 100) * .5 + "px";
     })
+
+    // menu burguer
+
+    var $burguerButton = document.getElementById("burguer-button"); 
+    var $menu = document.getElementById("menu");
+
+    $burguerButton.addEventListener ("touchstart", function() {
+      $menu.classList.toggle("active")
+    });
+
+
+
   </script>
 
 </body>
