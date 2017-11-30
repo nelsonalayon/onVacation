@@ -40,7 +40,7 @@ input:focus, textarea:focus {
 background:lightgray;
 }
 
-p, h3 {
+p, .equipo {
 	color: #003049;
 	text-align: left;
 }
@@ -108,7 +108,7 @@ p, h3 {
 
 
 .contenedor {
-	width: 1000px;
+	max-width: 1000px;
 	margin: 0 auto;
 	
 }
@@ -118,6 +118,7 @@ p, h3 {
 	max-width: 1000px;
 	overflow: hidden;
 	justify-content: space-around;
+	flex-wrap: wrap;
 	
 
 }
@@ -206,6 +207,7 @@ p, h3 {
 }
 
 .formulario {
+	
 	display: flex;	
 	width: 400px;
 	color:white;	
@@ -217,7 +219,7 @@ p, h3 {
 }
 
 .col1 {
-	margin-right: 15px;
+	margin: 0 15px 15px 0;
 }
 
 .col2 {
@@ -262,6 +264,10 @@ p, h3 {
 
 }
 
+.fotoequipo {
+	min-width: 300px;
+}
+
 .nosotros {
 	text-align: center;
 	
@@ -272,7 +278,10 @@ p, h3 {
 	justify-content: space-between;
 	align-items: center;
 	margin:50px 0;
+	flex-wrap: wrap-reverse;
+
 }
+
 
 .nosotros h2  {
 	margin-bottom: 0;
@@ -337,5 +346,146 @@ p, h3 {
 	display: flex;
 }
 
+@media screen and (max-width: 1000px)
+	{
 
+		.header {
+			display:inherit;
+		}
+
+
+		/*Portada*/
+		.titulo {
+			font-size: 45px;
+			line-height: 1;
+			margin-top: 30px;
+		}
+
+		.portada {
+			height: auto;
+		}
+
+		.textosTitulo {
+			position: inherit;
+			margin:30px 0 60px 60px;
+		}
+
+		.espaciador {
+			display: none;
+		}
+
+		.menu ul {
+			padding-left: 0;
+		}
+
+		.logotipo {
+			margin-right: 0;
+		}
+
+		.comentarios {
+			width: 211px;
+		}
+
+		.formulario {
+			flex-wrap: wrap;
+		}
+
+
+		/*portada*/
+
+
+		/*.contenedor {
+			width: auto;
+			max-width: 1000px;
+		}*/
+	}
+
+	@media screen and (max-width:830px ){
+
+		.header {
+			text-align: center;
+		}
+		
+		.logotipo {
+			margin:30px 0;
+		}
+
+		.menu li:first-child {
+			margin:0;
+		}
+	}
+
+@media screen and (max-width: 590px) {
+
+	.menu, .menu li {
+		display: block;
+	}
+
+	.menu li {
+		list-style: none;
+		padding:15px 0;
+		border-bottom: 1px solid white;
+		margin:0 20px;
+	}
+
+	.menu li:first-child {
+		border-top: 1px solid white;
+	}
+
+	.portada {
+		text-align: center;
+	}
+
+	.textosTitulo {
+		margin:30px 0;
+	}
+
+	.contenedorNosotros {
+		justify-content: center;
+	}
+
+	h2 {
+		font-size: 33px;
+	}
+
+	.footer .contenedor {
+		display:block;		
+	}
+
+	.contacto, .formulario {
+		margin:0 auto;
+	}
+
+	.formulario {
+		width: 300px;
+	}
+
+	.intereses label {
+		display: block;
+		font-size: 16px;
+	}
+
+	/*Selector de atributo*/
+
+	input[type="text"],
+	input[type="email"] {
+		font-size: 16px;
+		padding: 5px;
+	}
+
+	textarea {
+		width: 100%;
+	}
+
+	.col1 {
+		width: 100%;
+		margin-right: 0;
+	}
+
+	input[type="checkbox"] {
+		zoom: 1.5;
+	}
+
+	
+}
 
