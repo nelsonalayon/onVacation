@@ -67,7 +67,11 @@ background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+
 }
+
+
+
 .titulo {
 	font-size: 76px;
 	font-family: 'Montserrat', sans-serif;
@@ -196,10 +200,11 @@ p, .equipo {
 	color: white;
 	text-shadow: 2px 2px 1px #000;
 	background-size: 150%;
+	transition: 
 	
 }
 
-#nacional {
+/*#nacional {
  	background-image: url('https://prodstoragemedia.blob.core.windows.net/lugares/imagenes/lg-f60afa6a-d43c-458d-836b-75549feccfe8.jpeg');
 }
 
@@ -207,9 +212,10 @@ p, .equipo {
 	background-image: url("../img/panama.jpeg");
 }
 
-#cercaBogota {
-	background-image: url('https://prodstoragemedia.blob.core.windows.net/lugares/imagenes/lg-3f18833a-3b07-4007-93d8-e9312ef12b9d.jpeg')
-}
+#bogota {
+	background-image: url('https://prodstoragemedia.blob.core.windows.net/lugares/imagenes/lg-3f18833a-3b07-4007-93d8-e9312ef12b9d.jpeg');
+	
+}*/
 
 .nacional h2 {
 	position: relative;
@@ -515,6 +521,7 @@ p, .equipo {
 
 	.menu.active {
 		left: 0;
+		animation
 	}
 
 	.menu ul {
@@ -592,4 +599,6 @@ p, .equipo {
 
 	
 }
+
+
 
