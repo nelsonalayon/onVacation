@@ -305,6 +305,7 @@ p, .equipo {
 }
 
 .button {
+	display: inline-block;
 	border-radius: 8px;
 	border:none;
 	background: #f77f00;
@@ -420,8 +421,8 @@ p, .equipo {
 	height: 40px;
 	background:#d62828;
 	text-align: center;
-	display: inline-block;
-	position: absolute;
+	display: none;
+	position: fixed;
 	left: 15px;
 	top:15px;
 	cursor: pointer;
@@ -501,13 +502,17 @@ p, .equipo {
 
 @media screen and (max-width: 590px) {
 
+	.burguer-button {
+		display: block;
+	}
+
 	.portada .contenedor {
 		position: static;
 	}
 
 	.menu {
 		background: rgba(214, 40, 40, .5);
-		position: absolute;
+		position: fixed;
 		left: -100%;
 		width: 100%;
 		top: 0;

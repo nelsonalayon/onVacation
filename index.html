@@ -6,6 +6,8 @@
   <link rel="stylesheet" href="css/estilos.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:300,400,700" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  <link rel="stylesheet" href="">
   <!-- <link rel="stylesheet" media="(max-width: 1000px)" href="css/media-query.css"> -->
 </head>
 
@@ -117,7 +119,7 @@
         
        <div class="miembro">
                 
-                    <div class="fotomiembro"><img src="https://www.clinicadentalidentis.com/img/w738_h491_p1_c0-42-738-415/special-needs-dentistry.png" alt="paciente"></div>
+                    <div class="fotomiembro"><img src="img/muestra.jpg" alt="paciente"></div>
                     <div class="contenidomiembro">
                         <h4><a href="#">Monica Perry</a></h4>
                         <p>
@@ -419,6 +421,7 @@
 
     
   </footer> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
   <script>
 
@@ -458,6 +461,19 @@
             $menu.classList.toggle("active")
           }
 
+    function showMenu() {
+      $menu.classList.add("active")
+    }
+
+    function hideMenu() {
+      $menu.classList.remove("active")
+    }
+
+
+
+
+
+
     function mediaQuery() {
       if (consulta.matches) {
       // menu burguer
@@ -488,6 +504,17 @@
 });
 
     // blazy
+
+    // efectos con el dedo  
+
+    var $body = document.body;
+
+    var gestos = new Hammer($body);
+gestos.on('swipeleft', hideMenu);
+
+gestos.on('swiperight',showMenu);
+
+    // efectos con el dedo
 
 
 
