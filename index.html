@@ -30,19 +30,19 @@
     <nav class="menu" id="menu">  <!-- menu -->
       <ul>
         <li>
-          <a href="#internacional">Destinos <br> internacionales</a>
+          <a href="#internacional" id="uno">Destinos <br> internacionales</a>
         </li> 
         <li>
-          <a href="#nacional">Destinos <br> nacionales</a>
+          <a href="#nacional" id="dos">Destinos <br> nacionales</a>
         </li> 
         <li>
-          <a href="#bogota">Descanso <br> cerca a Bogotá</a>
+          <a href="#bogota" id="tres">Descanso <br> cerca a Bogotá</a>
         </li> 
         <li>
-          <a href="#reserva">¿Ya reservó?</a>
+          <a href="#reserva" id="cuatro">¿Ya reservó?</a>
         </li> 
         <li>
-          <a href="#contacto">Contáctenos</a>
+          <a href="#contacto" id="cinco">Contáctenos</a>
         </li>
 
       </ul> 
@@ -469,6 +469,24 @@
       $menu.classList.remove("active")
     }
 
+    // Para esconder el menu al hacer touch
+
+    var $uno = document.getElementById("uno");
+    $uno.addEventListener ("click", toggleMenu)
+
+    var $dos = document.getElementById("dos");
+    $dos.addEventListener ("click", toggleMenu)
+
+    var $tres = document.getElementById("tres");
+    $tres.addEventListener ("click", toggleMenu)
+
+    var $cuatro = document.getElementById("cuatro");
+    $cuatro.addEventListener ("click", toggleMenu)
+
+    var $cinco = document.getElementById("cinco");
+    $cinco.addEventListener ("click", toggleMenu)
+
+    // Para esconder el menu al hacer touch
 
 
 
